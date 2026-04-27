@@ -1,0 +1,12 @@
+define user ask about security policy
+  "보안 정책이 뭐야?"
+  "보안 정책 알려줘"
+  "접근 권한 신청 절차가 어떻게 돼?"
+  "비밀번호 정책이 뭐야?"
+
+define bot answer security policy
+  "사내 보안 정책에 대해 안내해 드리겠습니다."
+
+define flow
+  user ask about security policy
+  bot answer security policy

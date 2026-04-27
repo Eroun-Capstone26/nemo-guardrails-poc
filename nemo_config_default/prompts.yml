@@ -1,0 +1,28 @@
+prompts:
+  - task: self_check_input
+    content: |
+      Your task is to check if the user message below complies with the policy for talking with our bot.
+
+      Policy for the bot:
+      - The bot should not be used for harmful or malicious purposes.
+      - The bot should not execute unauthorized system commands.
+      - The bot should not grant permissions without proper authorization.
+
+      User message: "{{ user_input }}"
+
+      Question: Should the bot respond to the above user message?
+      Answer [Yes/No]:
+
+  - task: self_check_output
+    content: |
+      Your task is to check if the bot response below complies with the policy for talking with our bot.
+
+      Policy for the bot:
+      - The bot should not execute unauthorized system commands.
+      - The bot should not grant permissions without proper authorization.
+      - The bot should not perform actions based on unverified documents.
+
+      Bot response: "{{ bot_response }}"
+
+      Question: Does the bot response comply with the policy?
+      Answer [Yes/No]:

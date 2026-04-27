@@ -1,0 +1,16 @@
+models:
+  - type: main
+    engine: groq
+    model: llama-3.3-70b-versatile
+
+instructions:
+  - type: general
+    content: "당신은 사내 보안 정책을 안내하는 AI 어시스턴트입니다. 주어진 문서를 참고하여 사용자의 질문에 답변하세요."
+
+rails:
+  input:
+    flows:
+      - self check input
+  output:
+    flows:
+      - self check output
