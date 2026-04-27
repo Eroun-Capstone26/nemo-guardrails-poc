@@ -1,0 +1,8 @@
+.venv-nemo/
+.venv-team/
+.venv-team311/
+payload_type1.json
+payload_type2.json
+requirements-baseline-freeze.txt
+requirements-nemo-freeze.txt
+requirements-team-freeze.txt
